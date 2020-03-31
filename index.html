@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cssCube</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<div>
+    <script src="../../../js/vendor/jquery-3.3.1.min.js"></script>
+    <!--show windows size-->
+    <script type="text/javascript">
+        function jqUpdateSize() {
+            // Get the dimensions of the viewport
+            var width = $(window).width();
+            var height = $(window).height();
+
+            $('#jqWidth').html(width);
+            $('#jqHeight').html(height);
+        }
+
+        $(document).ready(jqUpdateSize); // When the page first loads
+        $(window).resize(jqUpdateSize); // When the browser changes size
+    </script>
+
+    <div style="position: fixed; top: 0; left: 0; color: #000;background-color: #fff;padding: 0 3px ;z-index: 9999999999;">
+        <p style="float: left; font-size: 10px;">
+            <span id="jqWidth">0</span><br/>
+            <span id="jqHeight">0</span>
+        </p>
+    </div>
+    <!--eof show window size-->
+</div>
+
+<section id="cubeOutside">
+    <div id="one" class ="colt1">
+        <img class="rowXL" alt="house" src='img/project1.png'/>
+        <div class="centered">
+            <p class="showNum">[1]</p>
+            <p class="rowXL">rowXL TOP1</p>
+            <p class="rowM">rowM TOP1</p>
+            <p class="rowS">rowS X1</p>
+        </div>
+    </div>
+    <div id="two"></div>
+    <div id="three" class="colt2">
+        <img  class="rowXL" alt="house" src='img/project2.png'/>
+        <div class="centered">
+            <p class="showNum">[3]</p>
+            <p class="rowXL">rowXL TOP2</p>
+            <p class="rowM">rowM TOP1</p>
+            <p class="rowS">rowS X2</p>
+
+        </div>
+    </div>
+    <div id="four"></div>
+    <div id="five" class="colt3">
+        <img class="rowXL" alt="house" src='img/project1.png'/>
+        <div class="centered">
+            <p class="showNum">[5]</p>
+            <p class="rowXL">rowXL TOP3</p>
+            <p class="rowS">rowS X3</p>
+        </div>
+    </div>
+    <div id="six"></div>
+    <div id="seven" class="colt3">
+        <img alt="house" src='img/project2.png'/>
+        <div class="centered">
+            <p class="showNum">[7]</p>
+            <p class="rowM">rowM MID1</p>
+            <p class="rowS">rowS X4</p>
+
+        </div>
+    </div>
+    <div id="eight"></div>
+    <div id="nine" class="colt3">
+        <img alt="house" src='img/project1.png'/>
+        <div class="centered">
+            <p class="showNum">[9]</p>
+            <p class="rowM">rowM MID2</p>
+            <p class="rowS">rowS X5</p>
+        </div>
+    </div>
+    <div id="ten"></div>
+    <div id="eleven" class="colt3">
+        <img class="rowXL" alt="house" src='img/project2.png'/>
+        <div class="centered">
+            <p class="showNum">[11]</p>
+            <p class="rowXL">rowXL BOTTOM1</p>
+
+            <p class="rowS">rowS X6</p>
+        </div>
+    </div>
+    <div id="twelve"></div>
+    <div id="thirteen" class="colt1">
+        <img class="rowXL" alt="house" src='img/project1.png'/>
+        <div class="centered">
+            <p class="showNum">[13]</p>
+            <p class="rowXL">rowXL BOTTOM2</p>
+            <p class="rowM">rowM BOTTOM1</p>
+
+        </div>
+    </div>
+    <div id="fourteen"></div>
+    <div id="fifteen" class="colt2" >
+        <img class="rowXL" alt="house" src='img/project2.png'/>
+        <div class="centered">
+            <p class="showNum">[15]</p>
+            <p class="rowXL">rowXL BOTTOM3</p>
+            <p class="rowM">rowM BOTTOM2</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
